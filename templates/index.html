@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<h1>LabForge</h1>
+
+<h2>Smart reports for smart students</h2>
+
+<form method="POST">
+
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="text" name="roll" placeholder="Roll Number" required>
+    <input type="text" name="lab_no" placeholder="Lab Number" required>
+    <input type="date" name="date" required>
+    <input type="number" name="num_questions" placeholder="Number of Questions" required>
+
+    <select name="language">
+        <option value="c">C / C++</option>
+        <option value="python">Python</option>
+    </select>
+
+    <button type="submit">Continue</button>
+
+</form>
+
+<p style="margin-top:25px; opacity:0.7;">
+    made by: Hriday 25/A03/009
+</p>
+
+{% endblock %}

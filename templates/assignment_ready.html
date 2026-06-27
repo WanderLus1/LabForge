@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>LabForge - Assignment Ready</title>
+{% endblock %}
+
+{% block body %}
+
+<h1>Assignment Generated Successfully</h1>
+
+<p>Your lab report has been compiled and is ready for preview or download.</p>
+
+<hr style="margin:30px 0; border: 0.5px solid #444;">
+
+<div>
+
+    <a href="/preview" class="btn btn-primary">
+        👁 Preview PDF
+    </a>
+
+    <a href="/download" class="btn btn-secondary">
+        ⬇ Download PDF
+    </a>
+
+</div>
+
+<div style="margin-top: 30px;">
+    <a href="/" class="btn btn-dark">
+        🔁 Create Another Report
+    </a>
+</div>
+
+{% endblock %}
